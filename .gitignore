@@ -1,0 +1,26 @@
+# Python cache and environment
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables (API keys, secrets)
+.env
+
+# Hugging Face or transformers model cache (optional, if local cache too large)
+# You can exclude this if you want to download fresh each time
+# ~/.cache/huggingface/
+
+# Logs
+*.log
+
+# IDE files (VSCode, PyCharm)
+.vscode/
+.idea/
+
+# MacOS system files
+.DS_Store
