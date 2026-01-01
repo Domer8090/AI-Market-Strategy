@@ -1,6 +1,7 @@
 transformers
-accelerate
 torch
-loguru
-requests
+yfinance
+discord.py
 python-dotenv
+requests
+loguru
