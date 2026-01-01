@@ -3,7 +3,9 @@ name: Run Trading Research Bot (Local LLM)
 on:
   push:
     branches: [main]
-  workflow_dispatch:  # Manual trigger in GitHub UI
+  workflow_dispatch:  # manual trigger
+  schedule:
+    - cron: '0 12 * * *'  # runs every day at 12:00 UTC
 
 jobs:
   run-bot:
@@ -13,10 +15,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Python 3.11
+      - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
-          python-version: 3.11
+          python-version: 3.10
 
       - name: Install dependencies
         run: |
