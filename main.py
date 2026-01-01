@@ -4,7 +4,19 @@ from signals.research_signal import build_signal
 from discord_bot.notifier import send_to_discord
 from llm_analysis.analyzer import analyze
 
-ASSETS = ["AAPL", "TSLA", "BTC"]
+ASSETS = [
+    "AAPL", "MSFT", "GOOGL", "AMZN", "META",
+    "NVDA", "AMD", "TSM", "INTC",
+    "TSLA", "F", "GM",
+    "JPM", "BAC", "GS",
+    "KO", "PEP", "MCD",
+    "WMT", "COST",
+    "NFLX", "DIS",
+    "XOM", "CVX",
+    "PLTR", "SNOW", "CRM",
+    "SPY", "QQQ",
+    "BTC", "ETH"
+]
 
 def run():
     for asset in ASSETS:
